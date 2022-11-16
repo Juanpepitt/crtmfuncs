@@ -11,7 +11,7 @@ URL = 'https://github.com/Juanpepitt/crtmfuncs.git'
 
 LICENSE = 'MIT'
 DESCRIPTION = 'obtiene funciones contenidas en un .py ubicado en un bucket de AWS S3' 
-LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-8')
+LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-16')
 LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = [
