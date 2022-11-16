@@ -28,5 +28,9 @@ setup(
     url=URL,
     license=LICENSE,
     packages=find_packages(),
-    include_package_data=True
+    include_package_data=True,
+    install_requires = [
+        'requests'
+    ],
+    setup_requires = ['requests']
 )
