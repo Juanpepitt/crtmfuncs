@@ -7,15 +7,19 @@ VERSION = '0.0.1'
 PACKAGE_NAME = 'funciones' 
 AUTHOR = 'Juan Pedro Hurtado'
 AUTHOR_EMAIL = 'juan.hurtado@co.idom.com'
-URL = 'github url'
+URL = 'https://github.com/Juanpepitt/crtmfuncs.git'
 
 LICENSE = 'MIT'
-DESCRIPTION = 'Aquí debes incluir una descripción corta de la librería' 
+DESCRIPTION = 'obtiene funciones contenidas en un .py ubicado en un bucket de AWS S3' 
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-8')
 LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = [
-      'listado de librerias'
+      'sys',
+      'boto3',
+      'json',
+      'importlib',
+      'abc'
       ]
 
 setup(
