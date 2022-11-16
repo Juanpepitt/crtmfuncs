@@ -1,7 +1,6 @@
 import pathlib
 import json
 import boto3
-import importlib
 import abc
 from setuptools import find_packages, setup
 
