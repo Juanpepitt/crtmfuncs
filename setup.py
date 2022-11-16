@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.0.3' 
+VERSION = '0.0.4' 
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
 AUTHOR_EMAIL = 'juanpepitt@gmail.com'
