@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 HERE = pathlib.Path(__file__).parent
 
 VERSION = '0.0.1' 
-PACKAGE_NAME = 'funciones' 
+PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
 AUTHOR_EMAIL = 'juan.hurtado@co.idom.com'
 URL = 'https://github.com/Juanpepitt/crtmfuncs.git'
