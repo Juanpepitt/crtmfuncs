@@ -1,12 +1,9 @@
 import pathlib
-import json
-import boto3
-import abc
 from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.0.4' 
+VERSION = '0.0.4'
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
 AUTHOR_EMAIL = 'juanpepitt@gmail.com'
@@ -17,7 +14,7 @@ DESCRIPTION = 'obtiene funciones contenidas en un .py ubicado en un bucket de AW
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-16')
 LONG_DESC_TYPE = "text/markdown"
 
-INSTALL_REQUIRES = [
+INSTALL_REQUIRES = [''
       ]
 
 setup(
