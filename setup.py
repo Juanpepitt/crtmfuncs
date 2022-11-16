@@ -7,7 +7,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.0.2' 
+VERSION = '0.0.3' 
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
 AUTHOR_EMAIL = 'juan.hurtado@co.idom.com'
@@ -19,11 +19,6 @@ LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-16')
 LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = [
-      'sys',
-      'boto3',
-      'json',
-      'importlib',
-      'abc'
       ]
 
 setup(
