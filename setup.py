@@ -9,7 +9,7 @@ HERE = pathlib.Path(__file__).parent
 VERSION = '0.0.3' 
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
-AUTHOR_EMAIL = 'juan.hurtado@co.idom.com'
+AUTHOR_EMAIL = 'juanpepitt@gmail.com'
 URL = 'https://github.com/Juanpepitt/crtmfuncs.git'
 
 LICENSE = 'MIT'
