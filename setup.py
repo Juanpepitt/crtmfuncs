@@ -15,7 +15,7 @@ DESCRIPTION = 'obtiene funciones contenidas en un .py ubicado en un bucket de AW
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-16')
 LONG_DESC_TYPE = "text/markdown"
 
-INSTALL_REQUIRES = "./requirements.txt"
+INSTALL_REQUIRES = './requirements.txt'
 
 setup(
     name=PACKAGE_NAME,
