@@ -15,11 +15,12 @@ LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-16')
 LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = [
-      'sys',
+      'sys'
+      """,
       'boto3',
       'json',
       'importlib',
-      'abc'
+      'abc'"""
       ]
 
 setup(
