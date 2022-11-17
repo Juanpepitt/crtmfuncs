@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 
 HERE = pathlib.Path(__file__).parent
-VERSION = '0.1.7'
+VERSION = '0.1.8'
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
 AUTHOR_EMAIL = 'juanpepitt@gmail.com'
@@ -30,8 +30,6 @@ setup(
         'requests',
         'pandas',
         's3fs',
-        'sys',
-        'io',
         'datetime',
         'psycopg2'
     ],
