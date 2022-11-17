@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.0.9'
+VERSION = '0.1.0'
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
 AUTHOR_EMAIL = 'juanpepitt@gmail.com'
@@ -32,7 +32,6 @@ setup(
         'boto3',
         's3fs',
         'pyspark',
-        'sys',
         'io',
         'json',
         'datetime',
