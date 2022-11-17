@@ -38,12 +38,6 @@ try:
 except Exception as e:
     print("Error :{} ".format(e))
 
-spark = SparkSession \
-    .builder \
-    .appName('QDATA_009_CalculoDinamicoFechas') \
-    .getOrCreate()
-spark_context = spark.sparkContext
-
 ########################################################################################################
 ########################################################################################################
 ########################################################################################################
@@ -53,16 +47,10 @@ global AWS_ACCESS_KEY
 global AWS_SECRET_KEY
 global AWS_REGION_NAME
 
-       
-#Tomando variables del establecimiento de credenciales
-
-def asigna(bucketName, accessKey, secretKey, regionName):
-        AWS_BUCKET_NAME = bucketName
-        AWS_ACCESS_KEY = accessKey
-        AWS_SECRET_KEY = secretKey
-        AWS_REGION_NAME = regionName
-
-
+AWS_BUCKET_NAME = None
+AWS_ACCESS_KEY = None
+AWS_SECRET_KEY = None
+AWS_REGION_NAME = None
 
 
 class AWSS3(object):
@@ -188,7 +176,13 @@ class Loader(Loaderinterface, AWSS3):
         AWSS3.__init__(self)
 
     #Función que retorna el módulo formado al 'importar/descargar' el elemento script
-    def get_instance(self):
+    def get_instance(self, bucket, access, secret, region):
+        
+        #Tomando variables del establecimiento de credenciales
+        AWS_BUCKET_NAME = bucket
+        AWS_ACCESS_KEY = access
+        AWS_SECRET_KEY = secret
+        AWS_REGION_NAME = region
 
         response = self.get_item(Key=self.Key)
         my_name = 'my_module'

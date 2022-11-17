@@ -1,8 +1,8 @@
 import pathlib
-from setuptools import find_packages, setup
+from setuptools import find_packages, setup 
+
 
 HERE = pathlib.Path(__file__).parent
-
 VERSION = '0.1.3'
 PACKAGE_NAME = 'crtmlib' 
 AUTHOR = 'Juan Pedro Hurtado Masero'
@@ -27,7 +27,16 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires = [
-        'requests'
+        'requests',
+        'pandas',
+        'boto3',
+        's3fs',
+        'sys',
+        'pyspark',
+        'io',
+        'json',
+        'datetime',
+        'psycopg2'
     ],
     setup_requires = ['requests']
 )
