@@ -1,12 +1,8 @@
 try:
-    import sys
     import boto3
     import json
-    import s3fs
-    import datetime
-    from datetime import timedelta, date
+    
     import pyspark.sql.types as T
-    # import pandas as pd
     from pyspark.sql.types import *
     from pyspark import SparkConf, SparkContext
     from pyspark.sql import functions as F
@@ -27,10 +23,6 @@ try:
         date_format
     )
     from pyspark.sql.utils import AnalysisException
-    from datetime import datetime, timedelta
-    from datetime import date
-    import psycopg2
-    import io
 
     import importlib.util
     from abc import ABC, abstractmethod
