@@ -145,9 +145,9 @@ class AWSS3(object):
             print(key)
         return None
 
-    def find_one_similar_key(self, searchTerm=''):
-        keys = self.get_all_keys()
-        return [key for key in keys if re.search(searchTerm, key)]
+#    def find_one_similar_key(self, searchTerm=''):
+#        keys = self.get_all_keys()
+#        return [key for key in keys if re.search(searchTerm, key)]
 
     def __repr__(self):
         return "AWS S3 Helper class "
