@@ -53,20 +53,16 @@ global AWS_ACCESS_KEY
 global AWS_SECRET_KEY
 global AWS_REGION_NAME
 
+       
 #Tomando variables del establecimiento de credenciales
 
-
-class CRTM ():
-    def __init__(self, bucketName, accessKey, secretKey, regionName):
-        self.bucketName = bucketName
-        self.accessKey = accessKey
-        self.secretKey = secretKey
-        self.regionName = regionName
-
+def asigna(bucketName, accessKey, secretKey, regionName):
         AWS_BUCKET_NAME = bucketName
         AWS_ACCESS_KEY = accessKey
         AWS_SECRET_KEY = secretKey
         AWS_REGION_NAME = regionName
+
+
 
 
 class AWSS3(object):
